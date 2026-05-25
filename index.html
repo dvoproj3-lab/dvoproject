@@ -5,6 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health Care System</title>
     <style>
+      body {
+        background-image: url("Hero 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+      }
+    </style>
+    <style>
       .title {
         text-align: center;
       }
@@ -16,12 +26,34 @@
     </style>
     <style>
       body {
-        background-image: url("bg1.png");
+        background-image: url("Hero 1.png");
       }
     </style>
     <style>
       .custom-font {
-        font-family: Inter, sans-serif;
+        font-family: "Italiana", sans-serif;
+      }
+    </style>
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      button {
+        padding: 5px 20px;
+        margin: 10px;
+        border-radius: 5px;
+      }
+    </style>
+    <style>
+      .image-container {
+        text-align: center;
+      }
+
+      img {
+        width: 500px;
+        border-radius: 10px;
       }
     </style>
   </head>
@@ -29,20 +61,17 @@
     <h1 class="title white-text custom-font">
       Welcome to the Health Care System
     </h1>
-    <p class="title white-text custom-font">Please select your role:</p>
-    <ul>
-      <p class="title white-text custom-font">
-        <a href="patient.html">Patient</a>
-      </p>
-      <p class="title white-text custom-font">
-        <a href="doctor.html">Doctor</a>
-      </p>
-      <p class="title white-text custom-font">
-        <a href="nurse.html">Nurse</a>
-      </p>
-      <p class="title white-text custom-font">
-        <a href="admin.html">Admin</a>
-      </p>
-    </ul>
+    <div class="container white-text custom-font">
+      <a href="login.html">
+        <button class="title">Login</button>
+      </a>
+
+      <a href="register.html">
+        <button class="title">Register</button>
+      </a>
+    </div>
+    <div class="image-container">
+      <img src="H Img.png" alt="Photo" />
+    </div>
   </body>
 </html>
