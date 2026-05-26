@@ -3,32 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Patient Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      .title {
-        text-align: center;
-      }
-    </style>
+    <title>Patient Portal</title>
     <style>
       body {
         background-image: url("Hero 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        width: 1200px;
+        margin: 50px auto;
+      }
+
+      .box {
+        width: 300px;
+        height: 180px;
+
+        background: lightblue;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        font-size: 24px;
+        border-radius: 15px;
+
+        cursor: pointer;
+      }
+
+      .white-text {
+        color: white;
+      }
+
+      body {
+        background-image: url("Hero 1.png");
+      }
+
+      .custom-font {
+        font-family: "Italiana", sans-serif;
+      }
+
+      .image-container {
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1 class="title">Patient Dashboard</h1>
-    <p class="title">Welcome, Navein</p>
-    <ul>
-      <p class="title">
-        <a class="title" href="view_records.html">View Medical Records</a>
-      </p>
-      <p class="title">
-        <a class="title" href="book_appointment.html">Book Appointment</a>
-      </p>
-      <p class="title">
-        <a class="title" href="prescriptions.html">View Prescriptions</a>
-      </p>
-    </ul>
+    <h1 class="title white-text custom-font">
+      Welcome to the Health Care System
+    </h1>
+    <h5 class="title white-text custom-font">For the People</h5>
+    <div class="container">
+      <div
+        class="box custom-font"
+        onclick="window.location.href = 'appointments.html'"
+      >
+        Schedule Appointments
+      </div>
+
+      <div
+        class="box custom-font"
+        onclick="window.location.href = 'followups.html'"
+      >
+        Prescription
+      </div>
+
+      <div
+        class="box custom-font"
+        onclick="window.location.href = 'labreports.html'"
+      >
+        Lab Reports
+      </div>
+
+      <div
+        class="box custom-font"
+        onclick="window.location.href = 'surgery.html'"
+      >
+        Doctor's Updates
+      </div>
+
+      <div
+        class="box custom-font"
+        onclick="window.location.href = 'medicalrep.html'"
+      >
+        Diet Plans
+      </div>
+
+      <div
+        class="box custom-font"
+        onclick="window.location.href = 'feedback.html'"
+      >
+        Medical Records
+      </div>
+    </div>
   </body>
 </html>
