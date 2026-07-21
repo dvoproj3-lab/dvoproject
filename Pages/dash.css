@@ -1,0 +1,51 @@
+      body {
+        background-image: url("Hero 1.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+
+        width: 1200px;
+        margin: 50px auto;
+      }
+
+      .box {
+        width: 300px;
+        height: 180px;
+
+        background: lightblue;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        font-size: 24px;
+        border-radius: 15px;
+
+        cursor: pointer;
+      }
+
+      .white-text {
+        color: white;
+      }
+      
+      .custom-font {
+        font-family: "Italiana", sans-serif;
+      }
+
+      .image-container {
+        text-align: center;
+      }
